@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BerryBreach - Account Verification Utility</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 90%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #4B0082; /* Main accent color */
+    }
+    header h1 {
+      color: #4B0082; /* Main accent color */
+      font-size: 2.8em;
+      margin: 0 0 10px 0;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #555;
+    }
+    section {
+      margin-bottom: 25px;
+    }
+    h2 {
+      color: #6a0dad; /* Slightly lighter purple for section headers */
+      font-size: 1.8em;
+      margin-top: 0;
+      margin-bottom: 15px;
+      padding-bottom: 5px;
+      border-bottom: 1px solid #eee;
+    }
+    p, ul li {
+      font-size: 1.05em;
+      color: #444;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 25px;
+    }
+    .footer-links {
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    .footer-links a, .contact-links a {
+      color: #4B0082;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+    .footer-links a:hover, .contact-links a:hover {
+      color: #8A2BE2; /* Lighter purple for hover */
+      text-decoration: underline;
+    }
+    .contact-section {
+      background-color: #f0e6f6; /* Light purple tint background */
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .contact-section h2 {
+        border-bottom: none; /* Remove border for contact header for cleaner look */
+        text-align: center;
+    }
+    .contact-links {
+        text-align: center;
+    }
+    .important-note {
+        background-color: #fff3cd;
+        border-left: 5px solid #ffeeba;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 5px;
+        font-size: 0.95em;
+    }
+    .button-cta {
+        display: inline-block;
+        background-color: #4B0082;
+        color: #fff;
+        padding: 12px 25px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.1em;
+        transition: background-color 0.3s ease;
+        margin-top: 10px;
+    }
+    .button-cta:hover {
+        background-color: #6a0dad;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+      header h1 {
+        font-size: 2.2em;
+      }
+      header p {
+        font-size: 1em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      .footer-links a, .contact-links a {
+        display: block;
+        margin: 8px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>BerryBreach</h1>
+      <p>Your Utility for Animal Jam Classic Account Verification</p>
+    </header>
+
+    <section id="about">
+      <h2>About BerryBreach</h2>
+      <p>BerryBreach is a desktop utility software designed to assist users of the game Animal Jam Classic in verifying the status and membership details of their game accounts. Our application provides a straightforward way for players to manage and confirm their account information.</p>
+      <p>We aim to provide a helpful tool for the Animal Jam Classic community, facilitating easier account information management for legitimate users.</p>
+    </section>
+
+    <section id="features">
+      <h2>How It Works</h2>
+      <ul>
+        <li><strong>Account Input:</strong> Users provide their Animal Jam Classic account credentials (username and password) directly into the secure desktop application.</li>
+        <li><strong>Verification:</strong> BerryBreach then attempts to verify the account status and membership details with Animal Jam Classic's authentication system.</li>
+        <li><strong>Results:</strong> The application displays the results, indicating if an account is valid and its current membership status.</li>
+        <li><strong>Credit System:</strong> To use the verification features, users can utilize daily free checks or purchase credit packages. Each account check consumes one credit.</li>
+      </ul>
+    </section>
+    
+    <section id="purchase">
+      <h2>Purchasing Credits</h2>
+      <p>Users can purchase credit packages securely through Stripe Checkout to continue using the verification features beyond their daily free allowance. This ensures a safe and reliable payment process.</p>
+    </section>
+
+    <div class="important-note">
+        <p><strong>Note:</strong> BerryBreach is intended for use with accounts that you own or have explicit permission to access. Users are responsible for adhering to the Terms of Service of Animal Jam Classic.</p>
+    </div>
+
+    <section id="support" class="contact-section">
+      <h2>Support & Community</h2>
+      <p>For assistance, questions, or to join our community, please reach out to us via our official Discord server. This is the primary way to receive support and stay updated.</p>
+      <div class="contact-links">
+        <a href="https://discord.gg/Nu2eE6d38a" target="_blank" class="button-cta">Join our Discord Server</a>
+        <!-- Optional: Add an email if you want to provide it here
+        <p style="margin-top: 15px;">Or email us at: <a href="mailto:support@example.com">support@example.com</a></p>
+        -->
+      </div>
+    </section>
+
+    <div class="footer-links">
+      <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/TERMS.html" target="_blank">Terms of Service</a>
+      <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/PRIVACY.html" target="_blank">Privacy Policy</a>
+    </div>
+  </div>
+
+</body>
+</html>

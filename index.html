@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BerryBreach - Account Verification Utility</title>
+  <title>BerryBreach - Account Utility</title> {/* Slightly more neutral title */}
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,7 +29,7 @@
     }
     header {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px; /* Reduced margin for tighter layout with warning */
       padding-bottom: 20px;
       border-bottom: 2px solid #4B0082; /* Main accent color */
     }
@@ -91,13 +91,39 @@
     .contact-links {
         text-align: center;
     }
-    .important-note {
+    .important-note { /* Existing style for general notes */
         background-color: #fff3cd;
         border-left: 5px solid #ffeeba;
         padding: 15px;
         margin: 20px 0;
         border-radius: 5px;
         font-size: 0.95em;
+    }
+    .critical-warning { /* New style for the main warning */
+        background-color: #f8d7da; /* Light red for warning */
+        border: 2px solid #f5c6cb;  /* Red border */
+        color: #721c24; /* Dark red text */
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        font-size: 0.98em;
+    }
+    .critical-warning h3 {
+        margin-top: 0;
+        color: #721c24;
+        text-align: center;
+        font-size: 1.4em;
+    }
+    .critical-warning p, .critical-warning ul li {
+        color: #721c24;
+        font-size: 1em;
+    }
+    .critical-warning strong {
+        font-weight: bold;
+    }
+    .critical-warning ul {
+        padding-left: 20px;
+        margin-bottom: 0;
     }
     .button-cta {
         display: inline-block;
@@ -129,6 +155,9 @@
       h2 {
         font-size: 1.5em;
       }
+      .critical-warning h3 {
+        font-size: 1.2em;
+      }
       .footer-links a, .contact-links a {
         display: block;
         margin: 8px 0;
@@ -141,45 +170,60 @@
   <div class="container">
     <header>
       <h1>BerryBreach</h1>
-      <p>Your Utility for Animal Jam Classic Account Verification</p>
+      <p>A Utility for Animal Jam Classic Account Management</p> {/* Slightly more neutral subtitle */}
     </header>
+
+    <div class="critical-warning">
+      <h3>🚨 CRITICAL WARNING & USER RESPONSIBILITY 🚨</h3>
+      <p><strong>READ THIS SECTION CAREFULLY BEFORE USING BERRYBREACH.</strong></p>
+      <ul>
+        <li><strong>RISK OF ACCOUNT PENALTIES (INCLUDING BANS):</strong> Using BerryBreach to check Animal Jam Classic accounts involves sending automated requests to Animal Jam's servers. This activity can be detected by Animal Jam and is <strong>HIGHLY LIKELY TO BE CONSIDERED A VIOLATION OF ANIMAL JAM'S TERMS OF SERVICE.</strong> Consequently, using BerryBreach carries a <strong>SIGNIFICANT RISK</strong> that your IP address may be temporarily or permanently banned by Animal Jam, and/or your Animal Jam account(s) may face penalties, including but not limited to, suspension or permanent termination.</li>
+        <li><strong>USE ENTIRELY AT YOUR OWN RISK:</strong> You acknowledge and agree that you use BerryBreach solely and entirely at your own risk.</li>
+        <li><strong>NO LIABILITY:</strong> The developers and distributors of BerryBreach are <strong>NOT RESPONSIBLE OR LIABLE</strong> for any direct or indirect consequences you may face from using this software. This includes, but is not limited to, IP bans, Animal Jam account suspensions or terminations, loss of account data or virtual items, or any other damages or losses.</li>
+        <li><strong>THIRD-PARTY TOOL - NO AFFILIATION:</strong> BerryBreach is an independent, third-party application. <strong>It is NOT affiliated with, endorsed, authorized, sponsored, or approved by WildWorks, Inc. or Animal Jam in any way.</strong> "Animal Jam," "Animal Jam Classic," and all related names, logos, and marks are trademarks of WildWorks, Inc.</li>
+        <li><strong>COMPLIANCE IS YOUR RESPONSIBILITY:</strong> You are solely responsible for ensuring that your use of BerryBreach complies with Animal Jam's Terms of Service and all applicable laws. If you are unsure, refrain from using this tool.</li>
+      </ul>
+      <p style="text-align: center; margin-top: 15px;"><strong>By downloading, installing, or using BerryBreach, you signify that you have read, understood, and agreed to these warnings and conditions.</strong></p>
+    </div>
 
     <section id="about">
       <h2>About BerryBreach</h2>
-      <p>BerryBreach is a desktop utility software designed to assist users of the game Animal Jam Classic in verifying the status and membership details of their game accounts. Our application provides a straightforward way for players to manage and confirm their account information.</p>
-      <p>We aim to provide a helpful tool for the Animal Jam Classic community, facilitating easier account information management for legitimate users.</p>
+      <p>BerryBreach is an independent desktop utility software developed to assist users in managing and checking the status of <strong>THEIR OWN</strong> Animal Jam Classic game accounts. Our application provides a way for players to review their account information.</p>
+      <p>This tool is offered to the Animal Jam Classic community with the understanding that users will use it responsibly and in accordance with all relevant terms and policies (see critical warning above).</p>
     </section>
 
-    <section id="features">
+    <section id="how-it-works"> {/* Renamed from "features" to be more descriptive of content */}
       <h2>How It Works</h2>
+      <p>BerryBreach functions as follows:</p>
       <ul>
-        <li><strong>Account Input:</strong> Users provide their Animal Jam Classic account credentials (username and password) directly into the secure desktop application.</li>
-        <li><strong>Verification:</strong> BerryBreach then attempts to verify the account status and membership details with Animal Jam Classic's authentication system.</li>
-        <li><strong>Results:</strong> The application displays the results, indicating if an account is valid and its current membership status.</li>
-        <li><strong>Credit System:</strong> To use the verification features, users can utilize daily free checks or purchase credit packages. Each account check consumes one credit.</li>
+        <li><strong>Account Input:</strong> Users provide their Animal Jam Classic account credentials (username and password) directly into the desktop application. We urge users to only input credentials for accounts they legitimately own.</li>
+        <li><strong>Automated Interaction:</strong> The BerryBreach application then interacts with Animal Jam Classic's systems by sending automated requests to check the provided account's status and membership details.</li>
+        <li><strong>Results Display:</strong> The application displays the results based on the response from Animal Jam's systems, indicating if an account appears valid and its current membership status.</li>
+        <li><strong>Credit System:</strong> To use the checking features, users can utilize daily free checks or purchase credit packages. Each account check consumes one credit. (Users should be aware of the risks associated with any automated checking as outlined in the critical warning).</li>
       </ul>
     </section>
     
     <section id="purchase">
       <h2>Purchasing Credits</h2>
-      <p>Users can purchase credit packages securely through Stripe Checkout to continue using the verification features beyond their daily free allowance. This ensures a safe and reliable payment process.</p>
+      <p>Users interested in additional checks beyond any free allowance can purchase credit packages. Payments are processed via Stripe Checkout. Please ensure you understand all risks and terms before making any purchases.</p>
     </section>
 
     <div class="important-note">
-        <p><strong>Note:</strong> BerryBreach is intended for use with accounts that you own or have explicit permission to access. Users are responsible for adhering to the Terms of Service of Animal Jam Classic.</p>
+        <p><strong>Intended Use Reminder:</strong> BerryBreach is intended for use only with Animal Jam Classic accounts that you personally own and have the explicit right to access. Users are responsible for adhering to the Terms of Service of Animal Jam Classic at all times. Unauthorized use is strictly prohibited by our own <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/TERMS.html" target="_blank">Terms of Service</a>.</p>
     </div>
 
     <section id="support" class="contact-section">
       <h2>Support & Community</h2>
-      <p>For assistance, questions, or to join our community, please reach out to us via our official Discord server. This is the primary way to receive support and stay updated.</p>
+      <p>For assistance with the BerryBreach application, questions, or to join our community, please reach out via our official Discord server. This is the primary channel for support and updates related to BerryBreach.</p>
+      <p style="font-size: 0.9em; text-align: center;">(Support does not cover issues arising from actions taken by Animal Jam/WildWorks against your IP or game accounts).</p>
       <div class="contact-links">
         <a href="https://discord.gg/Nu2eE6d38a" target="_blank" class="button-cta">Join our Discord Server</a>
       </div>
     </section>
 
     <div class="footer-links">
-      <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/TERMS.html" target="_blank">Terms of Service</a>
-      <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/PRIVACY.html" target="_blank">Privacy Policy</a>
+      <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/TERMS.html" target="_blank">BerryBreach Terms of Service</a>
+      <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/PRIVACY.html" target="_blank">BerryBreach Privacy Policy</a>
     </div>
   </div>
 

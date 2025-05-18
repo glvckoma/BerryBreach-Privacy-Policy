@@ -7,13 +7,13 @@
     body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background: #f4f4f4; color: #333; }
     .container { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
     h1, h2 { color: #4B0082; }
-    h1 { border-bottom: 2px solid #eee; padding-bottom: 0.5em; margin-bottom: 1em; }
-    h2 { margin-top: 1.5em; margin-bottom: 0.7em; }
-    ul { margin-left: 1.5em; padding-left: 1.5em; }
+    h1 { border-bottom: 2px solid #eee; padding-bottom: 0.5em; margin-bottom: 1em; text-align: center; }
+    h2 { margin-top: 1.5em; margin-bottom: 0.7em; border-bottom: 1px solid #eee; padding-bottom: 0.3em;}
+    ul { margin-left: 1.5em; padding-left: 1.5em; list-style-type: disc; }
     li { margin-bottom: 0.5em; }
     p { margin-bottom: 1em; }
     .contact-info { font-weight: bold; }
-    .last-updated { color: #666; font-size: 0.9em; margin-bottom: 1.5em; }
+    .last-updated { color: #666; font-size: 0.9em; margin-bottom: 1.5em; text-align: center; }
     a { color: #4B0082; text-decoration: none; }
     a:hover { text-decoration: underline; }
   </style>
@@ -21,115 +21,144 @@
 <body>
   <div class="container">
     <h1>Privacy Policy for BerryBreach</h1>
-    <p class="last-updated">Last Updated: May 18, 2025</p> <!-- Or current date -->
+    <p class="last-updated">Last Updated: May 17, 2025</p>
 
     <section>
       <h2>1. Introduction</h2>
-      <p>Welcome to BerryBreach ("we", "us", or "our"). We are committed to protecting the privacy of our users. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our BerryBreach desktop application (the "Application") and related services (collectively, the "Services").</p>
-      <p>Please read this Privacy Policy carefully. If you do not agree with the terms of this Privacy Policy, please do not access or use the Application.</p>
+      <p>Welcome to BerryBreach ("we", "us", "our", or "BerryBreach"). We are committed to protecting the privacy of our users ("user," "you," or "your"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you download, install, access, or use our BerryBreach desktop application (the "Application") and any related services, including our website and API (collectively, the "Services").</p>
+      <p>Please read this Privacy Policy carefully. By using the Services, you agree to the collection and use of information in accordance with this policy. If you do not agree with the terms of this Privacy Policy, please do not access or use the Services.</p>
+      <p>This Privacy Policy should be read in conjunction with our <a href="https://glvckoma.github.io/BerryBreach-Privacy-Policy/TERMS.html" target="_blank">Terms of Service</a>.</p>
     </section>
 
     <section>
       <h2>2. Information We Collect</h2>
-      <p>We may collect information about you in a variety of ways. The information we may collect via the Application includes:</p>
+      <p>We may collect information about you in a variety of ways when you use our Services. The information we may collect includes:</p>
       <ul>
         <li><strong>Personal Data:</strong>
           <ul>
-            <li><strong>Discord Account Information:</strong> When you authenticate using Discord, we collect your Discord User ID and may collect your Discord username/tag and email address (if provided by Discord and necessary for our services) for account creation, authentication, and communication purposes.</li>
-            <li><strong>IP Address:</strong> We may collect your IP address for security purposes, such as abuse prevention, rate limiting, and for diagnostic purposes.</li>
+            <li><strong>Discord Account Information:</strong> When you choose to authenticate or log in to BerryBreach using your Discord account, we collect your Discord User ID. We may also receive your Discord username/tag and email address if provided by Discord's API and necessary for account creation, authentication, communication, and support purposes within our Services. The specific information shared by Discord is subject to your Discord privacy settings and Discord's own privacy policy.</li>
+            <li><strong>IP Address:</strong> We may collect your IP address when you use our Services (e.g., interact with our API server). This is used for security purposes such as abuse prevention (e.g., detecting suspicious activity, rate limiting API requests), for diagnostic and troubleshooting purposes, and to determine general geographic location for analytics (e.g., country-level).</li>
           </ul>
         </li>
         <li><strong>Transaction Data:</strong>
           <ul>
-            <li>When you purchase credits, payments are processed by our third-party payment processor, Stripe. We do not directly collect or store your full credit card details. However, we may receive transaction details from Stripe, such as the amount paid, date of transaction, and a unique transaction identifier, to manage your credits and for our accounting purposes. For more information, please review Stripe’s Privacy Policy.</li>
+            <li>When you purchase credits or other paid features within the Application, payments are processed by our third-party payment processor, Stripe. We do not directly collect, store, or have access to your full credit card details or other sensitive payment information. Stripe handles this information directly. However, we may receive transaction confirmation details from Stripe, such as the amount paid, date of transaction, a unique transaction identifier, and partial payment information (like the last four digits of a card or card type) for the purposes of managing your credits, providing customer support regarding transactions, and for our internal accounting and record-keeping. For more details, please review <a href="https://stripe.com/privacy" target="_blank">Stripe’s Privacy Policy</a>.</li>
           </ul>
         </li>
-        <li><strong>Usage Data:</strong>
+        <li><strong>Usage Data & Application Interaction:</strong>
           <ul>
-            <li>We may collect information about how you use the Application, such as features accessed, accounts checked (username only, not passwords, for the purpose of tracking checks against credits), errors encountered, and general usage patterns. This data is primarily used in an aggregated and anonymized form to improve our Services, identify issues, and enhance user experience.</li>
+            <li>We may collect information about how you use and interact with the Application and our Services. This may include features accessed, actions taken within the Application (e.g., performing an account check), usernames of accounts checked (for the purpose of tracking checks against your credit balance and for internal logging if an error occurs during a check), timestamps of activity, errors encountered, crash reports, and general usage patterns or statistics. This data is primarily used in an aggregated and/or anonymized form to improve our Services, monitor performance, identify and fix issues, and enhance user experience. Passwords for third-party accounts (such as Animal Jam Classic accounts) are not part of this collected Usage Data.</li>
           </ul>
+        </li>
+        <li><strong>Device and Application Information:</strong>
+            <ul>
+                <li>We may collect basic information about the device on which the Application is installed and about the Application itself, such as device operating system, application version, and unique identifiers generated by the Application for installation tracking or error reporting. This helps us provide support and improve compatibility.</li>
+            </ul>
         </li>
       </ul>
-      <p>We do not knowingly collect passwords for any third-party accounts (such as Animal Jam Classic accounts) you may input into the Application for checking purposes, beyond their temporary use in volatile memory during an active check session initiated by you.</p>
+      <p><strong>Important Note on Third-Party Account Credentials (e.g., Animal Jam Classic):</strong> When you input credentials (username and password) for a third-party account (such as an Animal Jam Classic account) into the Application for the purpose of performing a check, these credentials are used by the Application on your device to attempt to communicate with the third-party service. <strong>We do not knowingly collect, store on our servers, or log these third-party passwords beyond their temporary, ephemeral use in your computer's volatile memory (RAM) during an active check session initiated and controlled by you.</strong> Once the check is complete or the session ends, these passwords are not designed to be retained by our Application or transmitted to our servers. You are responsible for the security of credentials you input into the Application.</p>
     </section>
 
     <section>
       <h2>3. How We Use Your Information</h2>
-      <p>Having accurate information about you permits us to provide you with a smooth, efficient, and customized experience. Specifically, we may use information collected about you via the Application to:</p>
+      <p>Having accurate information permits us to provide you with a smooth, efficient, secure, and customized experience. Specifically, we may use information collected about you via the Application and Services to:</p>
       <ul>
-        <li>Create and manage your BerryBreach account.</li>
-        <li>Authenticate your access to the Application.</li>
+        <li>Create, maintain, and manage your BerryBreach account.</li>
+        <li>Authenticate your access to the Application and Services.</li>
         <li>Process payments for credit packages and manage your credit balance.</li>
-        <li>Provide customer support and respond to your inquiries.</li>
-        <li>Monitor and analyze usage and trends to improve the Application and user experience.</li>
-        <li>Prevent fraudulent transactions, monitor against theft, and protect against criminal activity or abuse of our Services.</li>
-        <li>Comply with applicable legal requirements, such as tax obligations.</li>
-        <li>Diagnose and fix technology problems.</li>
+        <li>Fulfill your requests for products, services, and information.</li>
+        <li>Provide customer support, troubleshoot issues, and respond to your inquiries or requests.</li>
+        <li>Monitor and analyze usage, trends, and performance to improve the Application, Services, and overall user experience.</li>
+        <li>Develop new products, services, and features.</li>
+        <li>Prevent fraudulent transactions, monitor against theft or unauthorized activity, and protect against criminal activity, abuse of our Services, or violations of our Terms of Service.</li>
+        <li>Ensure the security and integrity of our Services, including debugging and repairing errors.</li>
+        <li>Comply with applicable legal and regulatory requirements, such as tax obligations or responding to lawful requests from authorities.</li>
+        <li>Communicate with you about your account, transactions, or important updates to our Services or policies (e.g., service-related announcements).</li>
       </ul>
     </section>
 
     <section>
       <h2>4. Disclosure of Your Information</h2>
-      <p>We do not sell, trade, rent, or otherwise share your Personal Data with third parties for their marketing purposes. We may share information we have collected about you in certain situations:</p>
+      <p>We are committed to maintaining your trust, and we want you to understand when and with whom we may share the information we collect. We do not sell, trade, rent, or otherwise share your Personal Data with unrelated third parties for their direct marketing purposes.</p>
+      <p>We may share information we have collected about you in the following situations:</p>
       <ul>
-        <li><strong>With Service Providers:</strong> We may share your information with third-party vendors, service providers, contractors, or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include:
+        <li><strong>With Service Providers:</strong> We may share your information with trusted third-party vendors, service providers, contractors, or agents who perform services for us or on our behalf and require access to such information to do that work. Examples include:
           <ul>
-            <li>Payment processing (Stripe).</li>
-            <li>Data hosting and infrastructure (e.g., DigitalOcean for our API server).</li>
+            <li>Payment processing (e.g., Stripe).</li>
+            <li>Data hosting, cloud computing, and infrastructure provision (e.g., DigitalOcean for our API server and database).</li>
+            <li>Customer support tools or platforms.</li>
+            <li>Analytics services (data is typically anonymized or aggregated).</li>
+            <li>Error tracking and crash reporting services.</li>
           </ul>
-          These service providers are obligated to protect your data and use it only for the purposes for which it was disclosed.
+          These service providers are contractually obligated to protect your data, maintain its confidentiality, and use it only for the specific purposes for which it was disclosed to them and in accordance with our instructions.
         </li>
-        <li><strong>By Law or to Protect Rights:</strong> If we believe the release of information about you is necessary to respond to legal process, to investigate or remedy potential violations of our policies, or to protect the rights, property, and safety of others, we may share your information as permitted or required by any applicable law, rule, or regulation.</li>
-        <li><strong>Aggregated/Anonymized Data:</strong> We may share aggregated or anonymized information that does not directly identify you for research, analysis, or service improvement purposes.</li>
+        <li><strong>By Law or to Protect Rights:</strong> If we believe the release of information about you is necessary to: (a) comply with any applicable law, rule, regulation, legal process, or governmental request; (b) enforce our Terms of Service or other agreements or policies; (c) investigate or remedy potential violations of our policies; or (d) protect the rights, property, and safety of BerryBreach, our users, or others, we may share your information as permitted or required. This may include exchanging information with other companies and organizations for fraud protection and credit risk reduction.</li>
+        <li><strong>Business Transfers:</strong> In connection with, or during negotiations of, any merger, sale of company assets, financing, or acquisition of all or a portion of our business by another company, your information may be transferred as part of that transaction. We will notify you via a prominent notice on our service of any change in ownership or uses of your personal information, as well as any choices you may have regarding your personal information.</li>
+        <li><strong>Aggregated or Anonymized Data:</strong> We may share aggregated or anonymized information, which does not directly identify you, with third parties for various purposes, including research, analysis, service improvement, or to understand usage trends.</li>
+        <li><strong>With Your Consent:</strong> We may disclose your personal information for any other purpose with your explicit consent.</li>
       </ul>
     </section>
 
     <section>
       <h2>5. Data Security</h2>
-      <p>We use administrative, technical, and physical security measures to help protect your personal information. While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission can be guaranteed against any interception or other type of misuse. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties.</p>
+      <p>We implement and maintain reasonable administrative, technical, and physical security measures designed to help protect your personal information from unauthorized access, use, disclosure, alteration, or destruction. We use measures such as data encryption (where appropriate), access controls, and secure software development practices.</p>
+      <p>While we have taken reasonable steps to secure the personal information you provide to us, please be aware that despite our efforts, no security measures are perfect or impenetrable, and no method of data transmission over the Internet or method of electronic storage can be guaranteed to be 100% secure. Therefore, we cannot guarantee absolute security. Any information disclosed online is vulnerable to interception and misuse by unauthorized parties. You transmit personal information at your own risk.</p>
     </section>
 
     <section>
       <h2>6. Data Retention</h2>
-      <p>We will only keep your personal information for as long as it is necessary for the purposes set out in this Privacy Policy, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
-      <p>You may request the deletion of your account and associated personal data by contacting us as described in Section 9.</p>
+      <p>We will only retain your personal information for as long as it is necessary to fulfill the purposes for which it was collected, as outlined in this Privacy Policy, including for the purposes of satisfying any legal, accounting, or reporting requirements, or to resolve disputes.</p>
+      <p>Generally, this means we will keep your account information as long as your account is active. Transaction data may be kept for longer periods as required by financial regulations. Usage data that is anonymized or aggregated may be kept indefinitely for analytical purposes.</p>
+      <p>When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it. If this is not possible (for example, because your personal information has been stored in backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p>
+      <p>You may request the deletion of your account and associated personal data by contacting us as described in Section 11 ("Contact Us"). We will respond to such requests in accordance with applicable law.</p>
     </section>
 
     <section>
-      <h2>7. Your Privacy Rights</h2>
-      <p>Depending on your jurisdiction, you may have the following rights regarding your personal information:</p>
+      <h2>7. Your Privacy Rights and Choices</h2>
+      <p>Depending on your jurisdiction (e.g., if you are in the European Economic Area (EEA), UK, California, etc.), you may have certain rights regarding your personal information. These rights may include:</p>
       <ul>
-        <li>The right to access – You have the right to request copies of your personal data.</li>
-        <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
-        <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
-        <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
-        <li>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</li>
-        <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+        <li><strong>The right to access:</strong> You may have the right to request copies of the personal data we hold about you.</li>
+        <li><strong>The right to rectification:</strong> You may have the right to request that we correct any information you believe is inaccurate or complete information you believe is incomplete.</li>
+        <li><strong>The right to erasure (or "right to be forgotten"):</strong> You may have the right to request that we erase your personal data, under certain conditions.</li>
+        <li><strong>The right to restrict processing:</strong> You may have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+        <li><strong>The right to object to processing:</strong> You may have the right to object to our processing of your personal data, under certain conditions, particularly for direct marketing purposes or processing based on legitimate interests.</li>
+        <li><strong>The right to data portability:</strong> You may have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+        <li><strong>The right to withdraw consent:</strong> If we are processing your personal information based on your consent, you have the right to withdraw your consent at any time.</li>
+        <li><strong>The right to lodge a complaint:</strong> You have the right to lodge a complaint with a supervisory authority if you believe that our processing of your personal information infringes applicable law.</li>
       </ul>
-      <p>To exercise any of these rights, please contact us using the contact details provided below.</p>
+      <p>To exercise any of these rights, please contact us using the contact details provided in Section 11 ("Contact Us"). We will respond to your request within the timeframes required by applicable law. We may need to verify your identity before processing your request.</p>
+      <p>Please note that some of these rights may be limited, for example, if fulfilling your request would adversely affect other individuals, or if we are required by law to retain your information.</p>
     </section>
 
     <section>
       <h2>8. Children's Privacy</h2>
-      <p>Our Services are not directed to individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that a child under 13 has provided us with personal information, we will take steps to delete such information. If you believe that we might have any information from or about a child under 13, please contact us.</p>
+      <p>Our Services are not directed to, and we do not knowingly collect personal information from, individuals under the age of 13 (or the relevant minimum age in your jurisdiction if it is higher). If we become aware that we have inadvertently collected personal information from a child under the age of 13 without verifiable parental consent, we will take steps to delete such information from our records as soon as possible.</p>
+      <p>If you are a parent or guardian and believe that your child under 13 has provided us with personal information without your consent, please contact us using the details in Section 11 ("Contact Us").</p>
     </section>
     
     <section>
-      <h2>9. Cookies and Tracking Technologies</h2>
-      <p>Our desktop Application does not directly use cookies. However, our third-party payment processor (Stripe) may use cookies or similar tracking technologies on their checkout pages. We encourage you to review their privacy policy for more information on their practices.</p>
+      <h2>9. Cookies and Similar Tracking Technologies</h2>
+      <p>Our desktop Application itself generally does not use cookies in the traditional web browser sense. However, when you interact with our Services, certain technologies may be employed:</p>
+      <ul>
+        <li><strong>Third-Party Payment Processor:</strong> Our third-party payment processor, Stripe, may use cookies or similar tracking technologies on their checkout pages to process payments and prevent fraud. We encourage you to review Stripe’s privacy policy for more information on their practices.</li>
+        <li><strong>Website/API Interactions:</strong> If you interact with any associated websites or our API, standard web technologies like cookies, local storage, or server logs might be used for session management, authentication, analytics, and security. These would be used in line with the purposes outlined in this policy.</li>
+      </ul>
+      <p>We do not currently respond to Do Not Track (DNT) signals for our website or API as there is no industry-standard approach for DNT signals.</p>
     </section>
 
     <section>
       <h2>10. Changes to This Privacy Policy</h2>
-      <p>We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+      <p>We may update this Privacy Policy from time to time in order to reflect, for example, changes to our data practices, or for other operational, legal, or regulatory reasons. If we make material changes to this Privacy Policy, we will notify you by posting the updated policy on this page and updating the "Last Updated" date at the top. We may also provide notice through the Application or via other communication channels, such as email if we have your email address, if the changes are significant.</p>
+      <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
     </section>
 
     <section>
       <h2>11. Contact Us</h2>
-      <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal information, please contact us:</p>
+      <p>If you have any questions, concerns, requests regarding this Privacy Policy, our data practices, or your personal information, please do not hesitate to contact us:</p>
       <ul>
         <li>Via our official Discord server: <a href="https://discord.gg/Nu2eE6d38a" target="_blank">https://discord.gg/Nu2eE6d38a</a></li>
-      </ul>
+        </ul>
+      <p>We will endeavor to address your concerns promptly and effectively.</p>
     </section>
   </div>
 </body>
